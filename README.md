@@ -11,20 +11,20 @@ The original wrapper only worked for extreemly short texts and it did not accept
 
 ## To use the new feature:
 
-      	import sys
+      import sys
 
-      	sys.path.append("[full-path]/corenlp-python/corenlp")
+      sys.path.append("[full-path]/corenlp-python/corenlp")
 
-	from collections import OrderedDict
+      from collections import OrderedDict
 
-      	corenlp_dir = "[full-path]/corenlp-python/stanford-corenlp-full-2013-04-04"
+      corenlp_dir = "[full-path]/corenlp-python/stanford-corenlp-full-2013-04-04"
 
-	corenlp = StanfordCoreNLP(corenlp_dir)
+      corenlp = StanfordCoreNLP(corenlp_dir)
 
-   	parse_dict=eval(corenlp.parse())
+      parse_dict=eval(corenlp.parse())
 
 If you instead type:
 
-  parse_dict=eval(corenlp.parse(text))
+      parse_dict=eval(corenlp.parse(text))
 
 where "text" is any non-empty string, the behavior is identical to the behavior before the new changes. Thus, if you want to use the new feature, you can just leave the text blank and place your raw files into the "raw_files" folder. The rest is as before.
