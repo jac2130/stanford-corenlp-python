@@ -11,13 +11,17 @@ The original wrapper only worked for extreemly short texts and it did not accept
 
 ## To use the new feature:
 
-   import sys
-   sys.path.append("[full-path]/corenlp-python/corenlp")
-   from collections import OrderedDict
-   corenlp_dir = "[full-path]/corenlp-python/stanford-corenlp-full-2013-04-04"
-   corenlp = StanfordCoreNLP(corenlp_dir)
+      	import sys
 
-   parse_dict=eval(corenlp.parse())
+      	sys.path.append("[full-path]/corenlp-python/corenlp")
+
+	from collections import OrderedDict
+
+      	corenlp_dir = "[full-path]/corenlp-python/stanford-corenlp-full-2013-04-04"
+
+	corenlp = StanfordCoreNLP(corenlp_dir)
+
+   	parse_dict=eval(corenlp.parse())
 
 If you instead type:
 
