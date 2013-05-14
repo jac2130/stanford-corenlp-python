@@ -131,7 +131,7 @@ def parse_xml_output():
 
     [lines.extend(sent_detector.tokenize(open(text, 'r').read().strip())) for text in files]
 
-    command='java -Xmx3g -cp ../../corenlp-python/stanford-corenlp-full-2013-04-04/stanford-corenlp-1.3.5.jar:../../corenlp-python/stanford-corenlp-full-2013-04-04/stanford-corenlp-1.3.5-models.jar:../../corenlp-python/stanford-corenlp-full-2013-04-04/xom.jar:../../corenlp-python/stanford-corenlp-full-2013-04-04/joda-time.jar:../../corenlp-python/stanford-corenlp-full-2013-04-04/jollyday.jar edu.stanford.nlp.pipeline.StanfordCoreNLP -props ../../corenlp-python/corenlp/default.properties -filelist ../files.txt'
+    command='java -Xmx3g -cp ../../corenlp-wrapper/stanford-corenlp-full-2013-04-04/stanford-corenlp-1.3.5.jar:../../corenlp-wrapper/stanford-corenlp-full-2013-04-04/stanford-corenlp-1.3.5-models.jar:../../corenlp-wrapper/stanford-corenlp-full-2013-04-04/xom.jar:../../corenlp-wrapper/stanford-corenlp-full-2013-04-04/joda-time.jar:../../corenlp-wrapper/stanford-corenlp-full-2013-04-04/jollyday.jar edu.stanford.nlp.pipeline.StanfordCoreNLP -props ../../corenlp-wrapper/corenlp/default.properties -filelist ../files.txt'
 
     #creates the xml file of parser output:
 
