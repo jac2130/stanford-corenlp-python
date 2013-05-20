@@ -233,11 +233,6 @@ class StanfordCoreNLP(object):
         Spawns the server as a process.
         """
 
-        # TODO: Can edit jar constants
-        # jars = ["stanford-corenlp-1.3.5.jar",
-        #         "stanford-corenlp-1.3.5-models.jar",
-        #         "joda-time.jar",
-        #         "xom.jar"]
         jars = ["stanford-corenlp-1.3.5.jar",
                 "stanford-corenlp-1.3.5-models.jar",
                 "xom.jar",
